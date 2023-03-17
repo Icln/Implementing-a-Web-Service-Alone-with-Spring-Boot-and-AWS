@@ -1,4 +1,6 @@
 spring:
+  session:
+    store-type: jdbc
   profiles:
     include: oauth
   datasource:
