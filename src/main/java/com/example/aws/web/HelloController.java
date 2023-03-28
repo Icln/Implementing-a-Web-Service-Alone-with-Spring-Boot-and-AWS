@@ -15,6 +15,7 @@ public class HelloController {
 
     @GetMapping("/bye")
     public HelloResponseDto bye(@RequestParam("name") String name, @RequestParam("amount") int amount){
+        System.out.println("v1");
         return new HelloResponseDto(name,amount);
     }
 
