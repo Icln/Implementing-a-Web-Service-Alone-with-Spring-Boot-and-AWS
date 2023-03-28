@@ -12,4 +12,10 @@ public class HelloController {
     public HelloResponseDto hello(@RequestParam("name") String name, @RequestParam("amount") int amount){
         return new HelloResponseDto(name,amount);
     }
+
+    @GetMapping("/bye")
+    public HelloResponseDto bye(@RequestParam("name") String name, @RequestParam("amount") int amount){
+        return new HelloResponseDto(name,amount);
+    }
+
 }
